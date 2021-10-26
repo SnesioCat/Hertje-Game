@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Dramatic Story Telling Music.wav-6e45ca464e620cf4074a0330a8fa3f75.sample"
+
+[deps]
+
+source_file="res://Tilesets/Dramatic Story Telling Music.wav"
+dest_files=[ "res://.import/Dramatic Story Telling Music.wav-6e45ca464e620cf4074a0330a8fa3f75.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

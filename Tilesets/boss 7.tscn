@@ -1,0 +1,130 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://unnamed (5).png" type="Texture" id=1]
+[ext_resource path="res://unnamed (17).png" type="Texture" id=2]
+[ext_resource path="res://Death_egg_generations.png" type="Texture" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Tilesets/The Final World.tres" type="TileSet" id=5]
+[ext_resource path="res://Spawner.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Tilesets/Cameraboss7.gd" type="Script" id=7]
+[ext_resource path="res://Zinger.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Deathbox1.gd" type="Script" id=9]
+[ext_resource path="res://Deadserpant(7).gd" type="Script" id=10]
+[ext_resource path="res://New Music/22 Boss Bossanova.ogg" type="AudioStream" id=11]
+
+[node name="boss 7" type="Node2D"]
+
+[node name="unnamed (5)" type="Sprite" parent="."]
+position = Vector2( 43753.1, -2121.95 )
+scale = Vector2( 383.71, 151.205 )
+texture = ExtResource( 1 )
+offset = Vector2( -79.2929, -13.6648 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 447.235, 365.646 )
+zoom = Vector2( 1.25, 1.25 )
+
+[node name="Death_egg_generations" type="Sprite" parent="."]
+position = Vector2( 6217.84, -1296.66 )
+scale = Vector2( 12.3582, 11.5964 )
+texture = ExtResource( 3 )
+
+[node name="unnamed (17)" type="Sprite" parent="."]
+position = Vector2( 6793.71, 180.552 )
+texture = ExtResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 16, 16 )
+collision_use_kinematic = true
+format = 1
+tile_data = PoolIntArray( -1507096, 2, 0, -1507095, 2, 0, -1507094, 2, 0, -1507093, 2, 0, -1507092, 2, 0, -1507091, 2, 0, -1376001, 2, 0, -1376000, 2, 0, -1375999, 2, 0, -1375998, 2, 0, -1375997, 2, 0, -1375996, 2, 0, -1310441, 2, 0, -1310440, 2, 0, -1310439, 2, 0, -1310438, 2, 0, -1113812, 2, 0, -1113811, 2, 0, -1113810, 2, 0, -1113809, 2, 0, -1113808, 2, 0, -1113807, 2, 0, -1113806, 2, 0, -1113805, 2, 0, -1113804, 2, 0, -1048360, 7, 0, -1048359, 7, 0, -982824, 7, 0, -982823, 7, 0, -982818, 2, 0, -982817, 2, 0, -982816, 2, 0, -982815, 2, 0, -982814, 2, 0, -982813, 2, 0, -982812, 2, 0, -982811, 2, 0, -982810, 2, 0, -917288, 7, 0, -917287, 7, 0, -851752, 7, 0, -851751, 7, 0, -786216, 7, 0, -786215, 7, 0, -720680, 7, 0, -720679, 7, 0, -655144, 7, 0, -655143, 7, 0, -655036, 2, 0, -655035, 2, 0, -655034, 2, 0, -655033, 2, 0, -655032, 2, 0, -655031, 2, 0, -655030, 2, 0, -655029, 2, 0, -589608, 7, 0, -589607, 7, 0, -524072, 7, 0, -524071, 7, 0, -458536, 7, 0, -458535, 7, 0, -393000, 7, 0, -392999, 7, 0, -327464, 7, 0, -327463, 7, 0, -261928, 7, 0, -261927, 7, 0, -261815, 7, 0, -261814, 7, 0, -261813, 7, 0, -261812, 7, 0, -261811, 7, 0, -261810, 7, 0, -196392, 7, 0, -196391, 7, 0, -196279, 7, 0, -196278, 7, 0, -196277, 7, 0, -196276, 7, 0, -196275, 7, 0, -196274, 7, 0, -130856, 7, 0, -130855, 7, 0, -65320, 7, 0, -65319, 7, 0, 208, 1, 0, 209, 1, 0, 210, 1, 0, 211, 1, 0, 212, 1, 0, 213, 1, 0, 214, 1, 0, 215, 1, 0, 216, 7, 0, 217, 7, 0, 393408, 9, 0, 393409, 9, 0, 393410, 9, 0, 393411, 9, 0, 393412, 9, 0, 459086, 2, 0, 459087, 2, 0, 459088, 2, 0, 459089, 2, 0, 459090, 2, 0, 655540, 9, 0, 655541, 9, 0, 655542, 9, 0, 655543, 9, 0, 655544, 9, 0, 655545, 9, 0, 786838, 5, 0, 786839, 5, 0, 786840, 5, 0, 852313, 7, 0, 852314, 7, 0, 917849, 7, 0, 917850, 7, 0, 983385, 7, 0, 983386, 7, 0, 1048921, 7, 0, 1048922, 7, 0, 1114457, 7, 0, 1114458, 7, 0, 1114513, 5, 0, 1114514, 5, 0, 1114515, 5, 0, 1179993, 7, 0, 1179994, 7, 0, 1245350, 5, 0, 1245351, 5, 0, 1245352, 5, 0, 1245353, 5, 0, 1245354, 5, 0, 1245355, 5, 0, 1245529, 7, 0, 1245530, 7, 0, 1311065, 7, 0, 1311066, 7, 0, 1311113, 5, 0, 1311114, 5, 0, 1311115, 5, 0, 1376601, 7, 0, 1376602, 7, 0, 1441901, 5, 0, 1441902, 5, 0, 1441903, 5, 0, 1441904, 5, 0, 1441905, 5, 0, 1441906, 5, 0, 1442137, 7, 0, 1442138, 7, 0, 1507389, 5, 0, 1507390, 5, 0, 1507391, 5, 0, 1507392, 5, 0, 1507393, 5, 0, 1507394, 5, 0, 1507481, 5, 0, 1507482, 5, 0, 1507483, 5, 0, 1507484, 5, 0, 1507485, 5, 0, 1507486, 5, 0, 1507487, 5, 0, 1507673, 7, 0, 1507674, 7, 0, 1572947, 9, 0, 1572948, 9, 0, 1572949, 9, 0, 1572950, 9, 0, 1572951, 9, 0, 1572952, 9, 0, 1572953, 9, 0, 1572954, 9, 0, 1573209, 7, 0, 1573210, 7, 0, 1573272, 1, 0, 1573273, 1, 0, 1573274, 1, 0, 1573275, 1, 0, 1573276, 1, 0, 1573277, 1, 0, 1573278, 1, 0, 1573279, 1, 0, 1573280, 1, 0, 1573281, 1, 0, 1573282, 1, 0, 1573283, 1, 0, 1573284, 1, 0, 1573285, 1, 0, 1573286, 1, 0, 1573287, 1, 0, 1573288, 1, 0, 1573289, 1, 0, 1573290, 1, 0, 1573291, 1, 0, 1573292, 1, 0, 1573293, 1, 0, 1573294, 1, 0, 1573295, 1, 0, 1638446, 5, 0, 1638447, 5, 0, 1638448, 5, 0, 1638449, 5, 0, 1638450, 5, 0, 1638451, 5, 0, 1638452, 5, 0, 1638453, 5, 0, 1638808, 1, 0, 1638809, 1, 0, 1638810, 1, 0, 1638811, 1, 0, 1638812, 1, 0, 1638813, 1, 0, 1638814, 1, 0, 1638815, 1, 0, 1638816, 1, 0, 1638817, 1, 0, 1638818, 1, 0, 1638819, 1, 0, 1638820, 1, 0, 1638821, 1, 0, 1638822, 1, 0, 1638823, 1, 0, 1638824, 1, 0, 1638825, 1, 0, 1638826, 1, 0, 1638827, 1, 0, 1638828, 1, 0, 1638829, 1, 0, 1638830, 1, 0, 1638831, 1, 0, 1704309, 5, 0, 1704310, 5, 0, 1704311, 5, 0, 1704319, 5, 0, 1704320, 5, 0, 1704321, 5, 0, 1704344, 1, 0, 1704345, 1, 0, 1704346, 1, 0, 1704347, 1, 0, 1704348, 1, 0, 1704349, 1, 0, 1704350, 1, 0, 1704351, 1, 0, 1704352, 1, 0, 1704353, 1, 0, 1704354, 1, 0, 1704355, 1, 0, 1704356, 1, 0, 1704357, 1, 0, 1704358, 1, 0, 1704359, 1, 0, 1704360, 1, 0, 1704361, 1, 0, 1704362, 1, 0, 1704363, 1, 0, 1704364, 1, 0, 1704365, 1, 0, 1704366, 1, 0, 1704367, 1, 0, 1769880, 1, 0, 1769881, 1, 0, 1769882, 1, 0, 1769883, 1, 0, 1769884, 1, 0, 1769885, 1, 0, 1769886, 1, 0, 1769887, 1, 0, 1769888, 1, 0, 1769889, 1, 0, 1769890, 1, 0, 1769891, 1, 0, 1769892, 1, 0, 1769893, 1, 0, 1769894, 1, 0, 1769895, 1, 0, 1769896, 1, 0, 1769897, 1, 0, 1769898, 1, 0, 1769899, 1, 0, 1769900, 1, 0, 1769901, 1, 0, 1769902, 1, 0, 1769903, 1, 0, 1835364, 9, 0, 1835365, 9, 0, 1835366, 9, 0, 1835367, 9, 0, 1835368, 9, 0, 1835369, 9, 0, 1835370, 9, 0, 1835416, 1, 0, 1835417, 1, 0, 1835418, 1, 0, 1835419, 1, 0, 1835420, 1, 0, 1835421, 1, 0, 1835422, 1, 0, 1835423, 1, 0, 1835424, 1, 0, 1835425, 1, 0, 1835426, 1, 0, 1835427, 1, 0, 1835428, 1, 0, 1835429, 1, 0, 1835430, 1, 0, 1835431, 1, 0, 1835432, 1, 0, 1835433, 1, 0, 1835434, 1, 0, 1835435, 1, 0, 1835436, 1, 0, 1835437, 1, 0, 1835438, 1, 0, 1835439, 1, 0, 1900560, 9, 0, 1900561, 9, 0, 1900562, 9, 0, 1900563, 9, 0, 1900564, 9, 0, 1900565, 9, 0, 1900566, 9, 0, 1900567, 9, 0, 1900568, 9, 0, 1900569, 9, 0, 1900570, 9, 0, 1900571, 9, 0, 1900572, 9, 0, 1900573, 9, 0, 1900574, 9, 0, 1900575, 9, 0, 1900576, 9, 0, 1900577, 9, 0, 1900578, 9, 0, 1900579, 9, 0, 1900580, 9, 0, 1900581, 9, 0, 1900582, 9, 0, 1900583, 9, 0, 1900584, 9, 0, 1900952, 1, 0, 1900953, 1, 0, 1900954, 1, 0, 1900955, 1, 0, 1900956, 1, 0, 1900957, 1, 0, 1900958, 1, 0, 1900959, 1, 0, 1900960, 1, 0, 1900961, 1, 0, 1900962, 1, 0, 1900963, 1, 0, 1900964, 1, 0, 1900965, 1, 0, 1900966, 1, 0, 1900967, 1, 0, 1900968, 1, 0, 1900969, 1, 0, 1900970, 1, 0, 1900971, 1, 0, 1900972, 1, 0, 1900973, 1, 0, 1900974, 1, 0, 1900975, 1, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 447.235, 365.646 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Camera2D2" type="Camera2D" parent="KinematicBody2D"]
+position = Vector2( 6765.6, 309.8 )
+current = true
+
+[node name="Timer" type="Timer" parent="KinematicBody2D"]
+wait_time = 12.0
+autostart = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Spawner" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1234.53, -233.834 )
+
+[node name="Spawner2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1599.39, -260.773 )
+
+[node name="Spawner3" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 2006.74, -233.834 )
+
+[node name="Spawner4" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 2289.48, -132.26 )
+
+[node name="Spawner5" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 2723.42, -287.712 )
+
+[node name="Spawner7" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 3118.77, -479.59 )
+
+[node name="Spawner6" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 3761.36, -924.622 )
+
+[node name="Spawner8" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 4129.36, -888.622 )
+
+[node name="Spawner9" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 3957.36, -864.622 )
+
+[node name="Spawner10" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 4668.59, -801.562 )
+
+[node name="Spawner11" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 5100.59, -828.5 )
+
+[node name="KinematicBody2D" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 4683.61, -294.595 )
+
+[node name="KinematicBody2D2" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 5051.61, -271.623 )
+
+[node name="KinematicBody2D3" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 4683.61, -382.623 )
+
+[node name="KinematicBody2D4" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 4675.61, -479.59 )
+
+[node name="KinematicBody2D5" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 5051.61, -198.623 )
+
+[node name="KinematicBody2D6" parent="Node2D" instance=ExtResource( 8 )]
+position = Vector2( 5067.61, -342.623 )
+
+[node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
+script = ExtResource( 9 )
+
+[node name="Area2D" type="Area2D" parent="KinematicBody2D2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KinematicBody2D2/Area2D"]
+polygon = PoolVector2Array( -357.289, 682.335, 10202.7, 682.335, 10202.7, 1002.33, -581.289, 970.335, -1109.29, -933.665, -549.289, -661.665 )
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( -47.7515, 0 )
+polygon = PoolVector2Array( 6616.95, 139.699, 6710.29, 74.6455, 6840.4, 63.3318, 6911.11, 165.155, 6854.54, 173.64, 6625.44, 204.753 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = 2.0
+autoplay = true
+[connection signal="timeout" from="KinematicBody2D/Timer" to="KinematicBody2D" method="_on_Timer_timeout"]
+[connection signal="body_entered" from="KinematicBody2D2/Area2D" to="KinematicBody2D2" method="_on_Area2D_body_entered"]

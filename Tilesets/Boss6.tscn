@@ -1,0 +1,179 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Tilesets/World 6 (swamp).tres" type="TileSet" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://stg05_bg.jpg" type="Texture" id=3]
+[ext_resource path="res://Tilesets/katbeere.jpg" type="Texture" id=4]
+[ext_resource path="res://Zinger.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Zingerh(katbeer).tscn" type="PackedScene" id=6]
+[ext_resource path="res://Deathbox1.gd" type="Script" id=7]
+[ext_resource path="res://New Music/22 Boss Bossanova.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Finish.tscn" type="PackedScene" id=9]
+
+[node name="Boss6" type="Node2D"]
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 267.45, 26.9203 )
+
+[node name="stg05_bg" type="Sprite" parent="."]
+position = Vector2( 669.122, 242.733 )
+scale = Vector2( 7.90697, 7.81523 )
+texture = ExtResource( 3 )
+
+[node name="katbeere" type="Sprite" parent="."]
+position = Vector2( 271.693, 15.6065 )
+scale = Vector2( 0.192613, 0.17739 )
+texture = ExtResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 609.809, 58.5268 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 22, 18, 0, 24, 18, 0, 26, 18, 0, 65542, 1, 0, 65546, 1, 0, 131077, 0, 0, 131078, 3, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 3, 0, 131083, 0, 0, 196614, 2, 0, 196618, 2, 0, 262150, 2, 0, 262154, 2, 0, 262159, 18, 0, 262161, 18, 0, 262163, 18, 0, 327686, 2, 0, 327690, 2, 0, 393222, 2, 0, 393226, 2, 0, 458758, 2, 0, 458762, 2, 0, 524294, 2, 0, 524298, 2, 0, 589830, 2, 0, 589834, 2, 0, 655366, 2, 0, 655370, 2, 0, 720902, 2, 0, 720906, 2, 0, 786438, 2, 0, 786442, 2, 0, 851974, 2, 0, 851978, 2, 0, 917510, 2, 0, 917514, 2, 0 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="KinematicBody2D6" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -371.113, 51.6719 )
+
+[node name="KinematicBody2D" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -353.913, -86.2168 )
+
+[node name="KinematicBody2D2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -814.947, -12.6777 )
+
+[node name="KinematicBody2D3" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -1242.04, -171.07 )
+
+[node name="KinematicBody2D4" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -1562.56, 91.9741 )
+
+[node name="KinematicBody2D5" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -1573.88, -284.207 )
+
+[node name="KinematicBody2D7" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -1998.14, 193.797 )
+
+[node name="KinematicBody2D8" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2335.38, -111.187 )
+
+[node name="KinematicBody2D9" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2329.73, 7.60712 )
+
+[node name="KinematicBody2D10" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2329.73, -241.294 )
+
+[node name="KinematicBody2D11" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2827.53, -535.451 )
+
+[node name="KinematicBody2D12" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2838.84, -416.657 )
+
+[node name="KinematicBody2D13" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2844.5, -262.951 )
+
+[node name="KinematicBody2D14" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -2822.68, -673.559 )
+
+[node name="KinematicBody2D15" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -3474.01, -112.192 )
+
+[node name="KinematicBody2D16" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -3782.7, 136.239 )
+
+[node name="KinematicBody2D17" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -4455.67, -116.844 )
+
+[node name="KinematicBody2D18" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -4461.32, 41.5482 )
+
+[node name="KinematicBody2D19" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -5470.79, -372.456 )
+
+[node name="KinematicBody2D20" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -5055.1, -493.025 )
+
+[node name="KinematicBody2D21" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -5077.72, 38.7197 )
+
+[node name="KinematicBody2D22" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -5496.33, -7.67212 )
+
+[node name="KinematicBody2D23" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -6076.68, -156.442 )
+
+[node name="KinematicBody2D24" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -6474.77, -314.834 )
+
+[node name="KinematicBody2D25" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -6856.59, -75.7068 )
+
+[node name="KinematicBody2D26" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -7620.16, -16.1993 )
+
+[node name="KinematicBody2D27" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -7600.16, -374.425 )
+
+[node name="KinematicBody2D28" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -8015.94, -165.966 )
+
+[node name="KinematicBody2D29" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -8406.27, -318.701 )
+
+[node name="KinematicBody2D30" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -9049.84, -18.2324 )
+
+[node name="KinematicBody2D31" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -9257.84, -18.2324 )
+
+[node name="KinematicBody2D32" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -9630.86, -184.86 )
+
+[node name="KinematicBody2D33" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -10191.1, -208.771 )
+
+[node name="KinematicBody2D34" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -10191.1, -16.4376 )
+
+[node name="KinematicBody2D36" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11186.3, -129.764 )
+
+[node name="KinematicBody2D35" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11175.2, -310.594 )
+
+[node name="KinematicBody2D37" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11175, 56.9124 )
+
+[node name="KinematicBody2D38" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11180.6, -480.489 )
+
+[node name="KinematicBody2D39" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11180.6, 288.843 )
+
+[node name="KinematicBody2D40" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11186.3, -667.165 )
+
+[node name="KinematicBody2D41" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11186.3, -853.841 )
+
+[node name="KinematicBody2D42" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -11175, 509.461 )
+
+[node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Area2D" type="Area2D" parent="KinematicBody2D2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KinematicBody2D2/Area2D"]
+position = Vector2( 3.36127, 179.433 )
+scale = Vector2( 1.83479, 0.672131 )
+polygon = PoolVector2Array( 1972.02, 322.977, 1177.24, 359.746, -27.6749, 382.374, -121.013, 348.433, -700.95, 356.918, -1009.25, 379.545, -1017.73, 453.084, 679.323, 495.511, 2198.94, 478.54 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = 2.0
+autoplay = true
+[connection signal="body_entered" from="KinematicBody2D2/Area2D" to="KinematicBody2D2" method="_on_Area2D_body_entered"]

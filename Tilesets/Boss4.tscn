@@ -1,0 +1,192 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Tilesets/World 3.tres" type="TileSet" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Lava-PNG-Clipart.png" type="Texture" id=3]
+[ext_resource path="res://2460346.jpg" type="Texture" id=4]
+[ext_resource path="res://Deathbox1.gd" type="Script" id=5]
+[ext_resource path="res://Tilesets/nepantihert.tscn" type="PackedScene" id=6]
+[ext_resource path="res://New Music/Scott Pilgrim Vs. The World The Game (Original Soundtrack) Bollywood.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Tilesets/Boss4.gd" type="Script" id=9]
+
+[node name="Boss4" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="2460346" type="Sprite" parent="."]
+position = Vector2( 658.769, -12.8805 )
+scale = Vector2( 5.931, 5 )
+texture = ExtResource( 4 )
+
+[node name="Lava-PNG-Clipart" type="Sprite" parent="."]
+position = Vector2( 610.218, 790.71 )
+scale = Vector2( 4.71089, 4.18496 )
+texture = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 786426, 0, 0, 786427, 0, 0, 786428, 0, 0, 786429, 0, 0, 786430, 0, 0, 786431, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0, 720919, 0, 0, 720920, 0, 0, 720921, 0, 0, 720922, 0, 0, 720923, 0, 0, 720924, 0, 0, 720925, 0, 0, 720926, 0, 0, 720927, 0, 0, 720931, 0, 0, 720932, 0, 0, 720933, 0, 0, 720934, 0, 0, 720935, 0, 0, 720936, 0, 0, 720937, 0, 0, 720938, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 418.227, 265.959 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Area2D" type="Area2D" parent="KinematicBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KinematicBody2D/Area2D"]
+position = Vector2( 0, 177.877 )
+scale = Vector2( 1, 0.785156 )
+polygon = PoolVector2Array( 2385.33, 565.301, -1156.88, 531.447, -1156.88, 759.517, 2363.95, 759.517 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 516.721, 292.215 )
+current = true
+zoom = Vector2( 1.8, 1.8 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="nepantihert" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 945.639, 1393.81 )
+
+[node name="nepantihert2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -45.0405, 1963.98 )
+
+[node name="nepantihert3" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 275.683, 2502.09 )
+
+[node name="nepantihert4" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1302, 2915.46 )
+
+[node name="nepantihert5" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 829.389, 3438.41 )
+
+[node name="nepantihert6" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -30.4524, 3483.67 )
+
+[node name="nepantihert7" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 263.703, 4060.66 )
+
+[node name="nepantihert8" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1452.12, 4710.73 )
+
+[node name="nepantihert9" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 841.177, 4755.99 )
+
+[node name="nepantihert10" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -131.801, 4733.36 )
+
+[node name="nepantihert11" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 275.492, 5547.95 )
+
+[node name="nepantihert12" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -290.193, 5321.67 )
+
+[node name="nepantihert13" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 795.924, 6011.81 )
+
+[node name="nepantihert14" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -18.6641, 7052.67 )
+
+[node name="nepantihert15" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1384.24, 7595.73 )
+
+[node name="nepantihert16" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 750.67, 7052.67 )
+
+[node name="nepantihert17" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 26.5918, 8274.55 )
+
+[node name="nepantihert18" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 841.178, 8319.8 )
+
+[node name="nepantihert19" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 479.141, 9089.14 )
+
+[node name="nepantihert20" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1293.73, 9224.9 )
+
+[node name="nepantihert21" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -36.9994, 9971.38 )
+
+[node name="nepantihert22" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1165.94, 11673.9 )
+
+[node name="nepantihert23" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1307, 10067.4 )
+
+[node name="nepantihert24" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 501.766, 11020.7 )
+
+[node name="nepantihert25" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 473.857, 12379.4 )
+
+[node name="nepantihert26" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1241.86, 13019.4 )
+
+[node name="nepantihert27" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 345.857, 14235.4 )
+
+[node name="nepantihert28" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1305.86, 14363.4 )
+
+[node name="nepantihert29" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -422.143, 13275.4 )
+
+[node name="nepantihert30" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 217.857, 13403.4 )
+
+[node name="nepantihert31" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -102.143, 15963.4 )
+
+[node name="nepantihert32" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 409.857, 16091.4 )
+
+[node name="nepantihert33" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 921.857, 16283.4 )
+
+[node name="nepantihert34" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1049.86, 16987.4 )
+
+[node name="nepantihert35" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 89.8574, 18011.4 )
+
+[node name="nepantihert36" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 923.001, 17941.9 )
+
+[node name="nepantihert37" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 91.0006, 18965.9 )
+
+[node name="nepantihert38" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -570.408, 19993.9 )
+
+[node name="nepantihert39" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1013.51, 19812.9 )
+
+[node name="nepantihert40" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -72.6055, 21034.7 )
+
+[node name="nepantihert41" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 425.199, 21034.7 )
+
+[node name="nepantihert42" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 968.256, 21080 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = 2.0
+autoplay = true
+
+[node name="nepantihert" parent="." instance=ExtResource( 6 )]
+position = Vector2( 558.802, 22182.5 )
+
+[node name="nepantihert2" parent="." instance=ExtResource( 6 )]
+position = Vector2( -142.648, 22137.3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 33.0
+autostart = true
+[connection signal="body_entered" from="KinematicBody2D/Area2D" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
