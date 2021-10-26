@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/14 Treetop Rock (1).ogg-c36e414ad9361c7939933cde91c14e3c.oggstr"
+
+[deps]
+
+source_file="res://New Music/14 Treetop Rock (1).ogg"
+dest_files=[ "res://.import/14 Treetop Rock (1).ogg-c36e414ad9361c7939933cde91c14e3c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

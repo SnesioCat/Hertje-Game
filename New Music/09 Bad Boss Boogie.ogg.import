@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/09 Bad Boss Boogie.ogg-281777d719297a2f4193f1cd3e81f915.oggstr"
+
+[deps]
+
+source_file="res://New Music/09 Bad Boss Boogie.ogg"
+dest_files=[ "res://.import/09 Bad Boss Boogie.ogg-281777d719297a2f4193f1cd3e81f915.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Sonic the Hedgehog 2 - Metropolis Zone (1).ogg-b37ce2a1762934511d8e7a0aa0a71601.oggstr"
+
+[deps]
+
+source_file="res://New Music/Sonic the Hedgehog 2 - Metropolis Zone (1).ogg"
+dest_files=[ "res://.import/Sonic the Hedgehog 2 - Metropolis Zone (1).ogg-b37ce2a1762934511d8e7a0aa0a71601.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

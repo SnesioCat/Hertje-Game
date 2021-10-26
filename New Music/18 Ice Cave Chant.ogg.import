@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/18 Ice Cave Chant.ogg-15408abeb4f9f778b05ce6410bcd7990.oggstr"
+
+[deps]
+
+source_file="res://New Music/18 Ice Cave Chant.ogg"
+dest_files=[ "res://.import/18 Ice Cave Chant.ogg-15408abeb4f9f778b05ce6410bcd7990.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
