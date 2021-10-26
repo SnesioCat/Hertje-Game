@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://BUTTONS/pixel.tres" type="DynamicFont" id=1]
+
+[node name="Button" type="Button"]
+margin_right = 960.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 360, 60 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 8.0
+margin_top = -6.0
+margin_right = 407.0
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 1 )
+text = "Tree-top-tumble"
+__meta__ = {
+"_edit_use_anchors_": false
+}
