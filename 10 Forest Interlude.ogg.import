@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/10 Forest Interlude.ogg-a4e7a61908021b635b77b9aef6d5a7f6.oggstr"
+
+[deps]
+
+source_file="res://10 Forest Interlude.ogg"
+dest_files=[ "res://.import/10 Forest Interlude.ogg-a4e7a61908021b635b77b9aef6d5a7f6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

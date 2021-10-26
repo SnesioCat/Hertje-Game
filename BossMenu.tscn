@@ -1,0 +1,159 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://BUTTONS/LEVELTHREE(GOOD).tscn" type="PackedScene" id=1]
+[ext_resource path="res://hert.png" type="Texture" id=2]
+[ext_resource path="res://BUTTONS/ levelone(GOOD).tscn" type="PackedScene" id=3]
+[ext_resource path="res://BUTTONS/LEVELTWO(GOOD).tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttoninherate.gd" type="Script" id=6]
+[ext_resource path="res://Menudectichted.gd" type="Script" id=7]
+[ext_resource path="res://New Music/06 Bonus Room Blitz.ogg" type="AudioStream" id=8]
+[ext_resource path="res://BUTTONS/LEVELFOUR(GOOD).tscn" type="PackedScene" id=9]
+[ext_resource path="res://Button5.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Button6.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Button8.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Button7.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Tilesets/download (8).jpg" type="Texture" id=14]
+
+[node name="Menudectichted" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.65686
+margin_top = 73.3481
+margin_right = 5.65686
+margin_bottom = -93.6519
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="download (8)" type="Sprite" parent="."]
+position = Vector2( 1225.47, 492.268 )
+scale = Vector2( 14.6905, 6.22727 )
+texture = ExtResource( 14 )
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 30.0
+margin_top = 23.0
+margin_right = 990.0
+margin_bottom = 622.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="central" type="HBoxContainer" parent="Menu"]
+margin_right = 960.0
+margin_bottom = 599.0
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/central"]
+margin_right = 960.0
+margin_bottom = 599.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" parent="Menu/central/Buttons" instance=ExtResource( 3 )]
+margin_bottom = 45.0
+rect_min_size = Vector2( 300, 45 )
+script = ExtResource( 6 )
+scene_to_load = "res://Boos room bij.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button" index="0"]
+margin_left = 4.34314
+margin_top = -8.3481
+margin_right = 403.343
+margin_bottom = 41.6519
+text = "King Zinger"
+
+[node name="Button2" parent="Menu/central/Buttons" instance=ExtResource( 4 )]
+margin_top = 49.0
+margin_bottom = 109.0
+script = ExtResource( 6 )
+scene_to_load = "res://Boss room whale.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button2" index="0"]
+text = "Blue Whale"
+
+[node name="Button3" parent="Menu/central/Buttons" instance=ExtResource( 1 )]
+margin_top = 113.0
+margin_bottom = 173.0
+script = ExtResource( 6 )
+scene_to_load = "res://factory boss battle room.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button3" index="0"]
+margin_left = -3.65686
+margin_right = 517.343
+text = "Tilt Bot"
+
+[node name="Button4" parent="Menu/central/Buttons" instance=ExtResource( 9 )]
+margin_top = 177.0
+margin_bottom = 237.0
+scene_to_load = "res://Tilesets/Boss4.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button4" index="0"]
+margin_left = -3.65686
+margin_top = -1.34808
+margin_right = 517.343
+margin_bottom = 52.6519
+text = "Anti Deer Round 1"
+
+[node name="Button5" parent="Menu/central/Buttons" instance=ExtResource( 10 )]
+scene_to_load = "res://Boss 5.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button5" index="0"]
+margin_left = -3.65686
+margin_right = 265.343
+margin_bottom = 50.0
+text = "Big Bad Bat"
+
+[node name="Button6" parent="Menu/central/Buttons" instance=ExtResource( 11 )]
+scene_to_load = "res://Tilesets/Boss6.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button6" index="0"]
+margin_left = -3.65686
+margin_right = 138.343
+margin_bottom = 50.0
+text = "Killian"
+
+[node name="Button7" parent="Menu/central/Buttons" instance=ExtResource( 13 )]
+scene_to_load = "res://Tilesets/boss 7.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button7" index="0"]
+margin_left = -3.65686
+margin_right = 359.343
+margin_bottom = 50.0
+text = "Winged Serpant"
+
+[node name="Button8" parent="Menu/central/Buttons" instance=ExtResource( 12 )]
+scene_to_load = "res://The Final Boss.tscn"
+
+[node name="Label" parent="Menu/central/Buttons/Button8" index="0"]
+margin_left = -3.65686
+margin_right = 410.343
+margin_bottom = 50.0
+text = "Anti Deer Round 2"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = 1.0
+autoplay = true
+
+[node name="hert" type="Sprite" parent="."]
+position = Vector2( 1146.34, 46.6519 )
+scale = Vector2( 0.599306, 0.764298 )
+texture = ExtResource( 2 )
+
+[editable path="Menu/central/Buttons/Button"]
+
+[editable path="Menu/central/Buttons/Button2"]
+
+[editable path="Menu/central/Buttons/Button3"]
+
+[editable path="Menu/central/Buttons/Button4"]
+
+[editable path="Menu/central/Buttons/Button5"]
+
+[editable path="Menu/central/Buttons/Button6"]
+
+[editable path="Menu/central/Buttons/Button7"]
+
+[editable path="Menu/central/Buttons/Button8"]
