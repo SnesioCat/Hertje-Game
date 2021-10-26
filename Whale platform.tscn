@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Whale platform.gd" type="Script" id=1]
+[ext_resource path="res://unnamed.png" type="Texture" id=2]
+
+[node name="Whale platform" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -67.459, -70.1604, 66.8913, -70.1604, 69.7197, 65.6041, -70.2874, 65.6041 )
+
+[node name="unnamed" type="Sprite" parent="."]
+position = Vector2( 0.423231, -0.863968 )
+scale = Vector2( 0.425476, 0.434315 )
+texture = ExtResource( 2 )

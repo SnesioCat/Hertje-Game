@@ -1,0 +1,218 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://ClipartKey_1426284 - kopie.png" type="Texture" id=1]
+[ext_resource path="res://Robot.gd" type="Script" id=2]
+[ext_resource path="res://d2b8x3t-1f7edbd6-af4e-4ec4-9025-5d9f87f1f3e6.jpg" type="Texture" id=3]
+[ext_resource path="res://Flying hertje kat Horizontal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://IMGBIN_robot-enter-the-gungeon-pixel-art-png_f98a57Eu (1).png" type="Texture" id=5]
+[ext_resource path="res://Vsaw.tscn" type="PackedScene" id=6]
+[ext_resource path="res://New Music/09 Bad Boss Boogie.ogg" type="AudioStream" id=7]
+[ext_resource path="res://RoboSwitch.tscn" type="PackedScene" id=8]
+[ext_resource path="res://saw.tscn" type="PackedScene" id=9]
+
+[node name="factory boss battle room" type="Node2D"]
+
+[node name="d2b8x3t-1f7edbd6-af4e-4ec4-9025-5d9f87f1f3e6" type="Sprite" parent="."]
+position = Vector2( 540.231, 353.834 )
+scale = Vector2( 1.82212, 1.41472 )
+texture = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Vsaw" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 337.017, -39.1509 )
+
+[node name="Vsaw2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 636.679, -159.015 )
+
+[node name="Vsaw3" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 151.227, -338.812 )
+
+[node name="Vsaw4" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 927.351, -611.704 )
+
+[node name="Vsaw32" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1221.51, -611.704 )
+
+[node name="Vsaw33" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -68.2551, -589.077 )
+
+[node name="Vsaw5" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 627.689, -911.366 )
+
+[node name="Vsaw6" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 375.974, -899.379 )
+
+[node name="Vsaw7" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 172.204, -1330.89 )
+
+[node name="Vsaw8" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 855.432, -1486.72 )
+
+[node name="Vsaw9" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 459.879, -1678.5 )
+
+[node name="Vsaw10" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 166.189, -2046.8 )
+
+[node name="Vsaw11" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 837.431, -2046.8 )
+
+[node name="Vsaw14" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 825.564, -2594.89 )
+
+[node name="Vsaw12" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1153.8, -2966.5 )
+
+[node name="Vsaw13" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 537.889, -2618.86 )
+
+[node name="Vsaw15" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 576.744, -3047.09 )
+
+[node name="Vsaw16" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1020.24, -829.596 )
+
+[node name="Vsaw17" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1032.23, -1800.5 )
+
+[node name="Vsaw18" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 25.3668, -1596.73 )
+
+[node name="Vsaw19" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 121.259, -2543.66 )
+
+[node name="Vsaw20" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 289.069, -3083.05 )
+
+[node name="Vsaw21" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 61.3262, -3067.78 )
+
+[node name="Vsaw22" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1160.45, -3527.39 )
+
+[node name="Vsaw34" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1409.35, -3516.08 )
+
+[node name="Vsaw39" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -129.313, -4466.43 )
+
+[node name="Vsaw37" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1431.98, -2429.96 )
+
+[node name="Vsaw38" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 1398.04, -4477.74 )
+
+[node name="Vsaw35" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -140.627, -3504.76 )
+
+[node name="Vsaw36" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( -140.627, -2384.7 )
+
+[node name="Vsaw23" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 624.69, -3547.24 )
+
+[node name="Vsaw24" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 392.988, -4911.25 )
+
+[node name="Vsaw25" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 126.579, -3983.23 )
+
+[node name="Vsaw26" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 390.579, -3975.23 )
+
+[node name="Vsaw27" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 663.806, -4400.94 )
+
+[node name="Vsaw28" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 918.579, -4367.23 )
+
+[node name="Vsaw29" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 345.9, -4692.92 )
+
+[node name="Vsaw30" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 985.9, -4804.92 )
+
+[node name="Vsaw31" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 105.9, -4708.92 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 676.004, -4851.23 )
+
+[node name="Flying hertje kat Horizontal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.145, 475.545 )
+
+[node name="ClipartKey_1426284 - kopie" type="Sprite" parent="."]
+position = Vector2( 133.598, -125.479 )
+scale = Vector2( 0.885187, 1.0342 )
+texture = ExtResource( 1 )
+
+[node name="ClipartKey_1426284 - kopie2" type="Sprite" parent="."]
+position = Vector2( 367.334, -110.496 )
+scale = Vector2( 0.885187, 0.99145 )
+texture = ExtResource( 1 )
+
+[node name="ClipartKey_1426284 - kopie3" type="Sprite" parent="."]
+position = Vector2( 625.043, -119.486 )
+scale = Vector2( 1.06889, 1 )
+texture = ExtResource( 1 )
+
+[node name="ClipartKey_1426284 - kopie4" type="Sprite" parent="."]
+position = Vector2( 903.728, -119.486 )
+texture = ExtResource( 1 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 936, 352 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( -469.778, -252.733 )
+scale = Vector2( 0.338679, 0.304707 )
+texture = ExtResource( 5 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = 2.0
+autoplay = true
+
+[node name="saw one" parent="." instance=ExtResource( 9 )]
+position = Vector2( -53.0916, 257.233 )
+
+[node name="saw one2" parent="." instance=ExtResource( 9 )]
+position = Vector2( -53.0916, 421.282 )
+
+[node name="saw one3" parent="." instance=ExtResource( 9 )]
+position = Vector2( -58.7485, 590.988 )
+
+[node name="saw one4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1106.56, 274.204 )
+
+[node name="saw one5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1112.22, 443.909 )
+
+[node name="saw one6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1117.88, 602.301 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 514.774, 294.156 )
+current = true
+
+[node name="ClipartKey_1426284 - kopie5" type="Sprite" parent="Camera2D"]
+position = Vector2( 609.572, -12.0058 )
+rotation = -3.12943
+texture = ExtResource( 1 )
+
+[node name="ClipartKey_1426284 - kopie7" type="Sprite" parent="Camera2D"]
+position = Vector2( 603.915, 649.846 )
+rotation = -3.12943
+texture = ExtResource( 1 )
+
+[node name="ClipartKey_1426284 - kopie6" type="Sprite" parent="Camera2D"]
+position = Vector2( -606.652, -34.6332 )
+rotation = -3.12943
+texture = ExtResource( 1 )
+
+[node name="ClipartKey_1426284 - kopie8" type="Sprite" parent="Camera2D"]
+position = Vector2( -612.309, 655.503 )
+rotation = -3.12943
+texture = ExtResource( 1 )

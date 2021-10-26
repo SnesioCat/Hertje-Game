@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ClipartKey_1426284.png" type="Texture" id=1]
+[ext_resource path="res://pipe.gd" type="Script" id=2]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -56.2485, -190.866, 56.8886, -188.038, 59.717, 205.114, -56.2485, 205.114 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 4.24257, 4.24261 )
+scale = Vector2( 0.707404, 0.584411 )
+texture = ExtResource( 1 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

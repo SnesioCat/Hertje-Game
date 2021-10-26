@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://exit level 5.gd" type="Script" id=1]
+[ext_resource path="res://sign.png" type="Texture" id=2]
+
+[node name="exit level 5" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -43.9742, -20.037, 39.2703, -20.037, 39.2703, 10.8824, -3.5412, 8.50395, -3.5412, 41.8017, -15.4332, 13.2608, -39.2174, 10.8824 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1.18933, -1.18921 )
+scale = Vector2( 1.48312, 1.48312 )
+texture = ExtResource( 2 )

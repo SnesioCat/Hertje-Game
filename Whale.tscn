@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Whale vis bossD.gd" type="Script" id=1]
+[ext_resource path="res://download (1).jpg" type="Texture" id=2]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 99.22, 11.0886, 148.22, -54.9114, 160.22, -55.9114, 166.22, -45.9114, 138.22, 21.0886, 143.22, 45.0886, 132.22, 61.0886, 108.22, 42.0886, 11.22, 54.0886, -60.78, 57.0886, -127.78, 35.0886, -170.78, -5.9114, -162.78, -31.9114, -30.78, -27.9114, 92.22, 19.0886 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -164.78, 4.0886, -93.78, 54.0886, 24.22, 61.0886, 105.22, 51.0886, 151.22, 28.0886, 164.22, -10.9114, 111.22, 16.0886, -95.78, 19.0886, -129.78, -25.9114, -161.78, -24.9114 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -156.78, -32.9114, -46.78, -28.9114, 78.22, 11.0886, -60.78, -17.9114 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
